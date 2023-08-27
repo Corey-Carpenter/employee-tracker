@@ -19,6 +19,15 @@ async function queryRoles() {
     });
 }
 
+async function queryEmployees() {
+    return new Promise((resolve, reject) => {
+        db.query("select * from employee", function (err, results) {
+            if (err) return reject(err);
+            resolve(results);
+        });
+    });
+}
+
 async function queryDepartments() {
     return new Promise((resolve, reject) => {
         db.query("select * from department", function (err, results) {
