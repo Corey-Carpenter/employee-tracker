@@ -4,13 +4,14 @@
   "description": "employee tracking app",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "inquirer": "^9.2.10",
+    "inquirer": "^8.2.4",
     "mysql2": "^3.6.0"
   }
 }
